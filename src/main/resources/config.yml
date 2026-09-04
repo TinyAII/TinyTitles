@@ -1,0 +1,38 @@
+# TinyTitles 称号系统 配置
+settings:
+  max-display: 1                # 玩家最多同时显示几个称号（默认1，可调如3）
+  show-in-tab: true             # TAB 面板显示称号
+  show-in-chat: true            # 聊天栏显示称号
+  show-in-nametag: true         # 头顶名字显示称号（玩家头上）
+
+# 称号定义（管理员可游戏内 /称号 创建 动态创建，也会存这里）
+titles:
+  王公贵族:
+    color: "&e"
+    desc: "王公贵族，身份尊贵"
+    broadcast-on-join: true     # 进服全服通报（聊天栏）
+  VIP会员:
+    color: "&b"
+    desc: "VIP 会员专属"
+    broadcast-on-join: false
+  屠龙勇士:
+    color: "&c"
+    desc: "击杀过恶龙的勇士"
+    broadcast-on-join: true
+
+# 进服通报格式（聊天栏，非屏幕中间；{player} 玩家名 {title} 称号）
+broadcast-format: "&6[{title}] &e{player} &a驾临服务器！"
+
+messages:
+  prefix: "&7[&c称号&7] &r"
+  no-permission: "&c你没有权限这么做。"
+  no-titles: "&c你还没有任何称号。"
+  select-ok: "&a已设置显示称号。"
+  select-max: "&c最多只能显示 {max} 个称号。"
+  title-not-owned: "&c你没有这个称号。"
+  title-not-found: "&c找不到该称号。"
+  give-ok: "&a已给予 &e{player} &a称号 &e{title}"
+  remove-ok: "&a已收回 &e{player} &a的称号 &e{title}"
+  create-ok: "&a已创建称号 &e{title} &a（颜色 &e{color}&a）"
+  reloaded: "&a配置已重载。"
+  cleared: "&a已清除显示称号。"
