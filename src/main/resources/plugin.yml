@@ -1,0 +1,20 @@
+name: TinyTitles
+version: 1.0.0
+main: nl.tinyaii.tinytitles.TinyTitlesPlugin
+api-version: 1.16
+author: TinyAII
+description: 称号系统 - 玩家自定义称号显示在TAB/聊天栏，管理员发放，特权通报
+website: https://github.com/TinyAII
+
+commands:
+  称号:
+    aliases: [title, titles]
+    description: 称号系统主命令
+    usage: /称号 <子命令>
+permissions:
+  titles.use:
+    description: 使用称号功能（查看/选择）
+    default: true
+  titles.admin:
+    description: 称号管理（给予/收回/创建/重载）
+    default: op
